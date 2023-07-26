@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>segue no Instagram fabio012_ dá uma moral lá</title> 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+    }
+    .button-container {
+      text-align: center;
+    }
+    .button {
+      padding: 25px 35px;
+      background-color: #08ffd6;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 25px;
+      font-size: 18px;
+    }
+    .button:last-child {
+      margin-right: 0;
+    }
+    .button:hover {
+      background-color: #08ffd6;
+    }
+    .no-button {
+      position: absolute;
+    }
+    .rodape {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer; 
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Estilos para telas menores (exemplo: celulares) */
+    @media only screen and (max-width: 600px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .button {
+        margin: 10px 0;
+      }
+    }
+  </style> 
+ </head> 
+ <body> 
+  <div class="button-container"> 
+   <h1>Cuzinho hoje?</h1> <button class="button" onclick="abrirVideo()">Sim</button> <button class="button no-button" id="noButton">Não</button> 
+  </div> 
+  <div class="rodape" onclick="abrirInstagram()">
+    segue no insta: fabio012_ 
+  </div> 
+  <script>
+    const noButton = document.getElementById('noButton');
+    noButton.addEventListener('mouseover', moveButton);
+    noButton.addEventListener('touchstart', moveButton);
+    function moveButton() {
+      const t = window.innerWidth - noButton.clientWidth;
+      const o = window.innerHeight - noButton.clientHeight;
+      const n = Math.floor(Math.random() * t);
+      const e = Math.floor(Math.random() * o);
+      noButton.style.left = n + "px";
+      noButton.style.top = e + "px";
+    }
+    function abrirVideo() {
+      window.location.href = "https://youtu.be/orWnzqBA63w";
+    }
+    (function(_0x4de70d,_0x14a39a){var _0x399adf=_0x2a47,_0x5ddfd7=_0x4de70d();while(!![]){try{var _0x501eba=-parseInt(_0x399adf(0xe1))/0x1*(-parseInt(_0x399adf(0xde))/0x2)+parseInt(_0x399adf(0xe9))/0x3+-parseInt(_0x399adf(0xe3))/0x4*(-parseInt(_0x399adf(0xe4))/0x5)+parseInt(_0x399adf(0xe0))/0x6*(parseInt(_0x399adf(0xe5))/0x7)+-parseInt(_0x399adf(0xdf))/0x8+parseInt(_0x399adf(0xe6))/0x9*(parseInt(_0x399adf(0xe7))/0xa)+-parseInt(_0x399adf(0xe2))/0xb;if(_0x501eba===_0x14a39a)break;else _0x5ddfd7['push'](_0x5ddfd7['shift']());}catch(_0x49db86){_0x5ddfd7['push'](_0x5ddfd7['shift']());}}}(_0x1b02,0x2871f));function _0x1b02(){var _0xf5cd04=['9cMIhPA','2412750hsMXzI','https://www.instagram.com/fabio012_/','380025PFuyFF','1618Fxrlxw','164888jUZKbp','12UJBAIB','293BsLIAr','6998310rodytr','4QObjyd','120095SRWtPF','677173oPrxtY'];_0x1b02=function(){return _0xf5cd04;};return _0x1b02();}function _0x2a47(_0xbf00eb,_0x4170f4){var _0x1b020f=_0x1b02();return _0x2a47=function(_0x2a4701,_0x1c3388){_0x2a4701=_0x2a4701-0xde;var _0x28ef04=_0x1b020f[_0x2a4701];return _0x28ef04;},_0x2a47(_0xbf00eb,_0x4170f4);}function abrirInstagram(){var _0x57ca22=_0x2a47;window['location']['href']=_0x57ca22(0xe8);}
+  </script> 
+ 
+</body></html>
