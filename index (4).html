@@ -164,6 +164,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         console.error('Detalhes do erro:', error.message);
     });
    }
+
+
+
+
+
+fetch('https://dev-fabio-mr.000webhostapp.com/salvar.php', {
+  method: 'POST',  // ou 'GET', dependendo da sua API
+  headers: {
+    'Content-Type': 'application/json',  // ou o tipo de conteúdo apropriado
+    'Authorization': 'Bearer SEU_TOKEN',  // se necessário
+  },
+  body: JSON.stringify({
+    // Seus dados a serem enviados para o servidor PHP
+  }),
+})
+  .then(response => response.json())
+  .then(data => {
+    // Manipule os dados recebidos do servidor PHP
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Erro na requisição:', error);
+  });
+   
+
+
    
   </script>
   <div> 
