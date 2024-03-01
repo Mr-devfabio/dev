@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Questionário</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> 
+  <img src="https://i.ibb.co/8Yyr92b/anonimo.png" alt="Descrição da imagem"> 
+  <p class="main-text">O que você sabe sobre o Fábio?</p> 
+  <p class="smaller-text">Anônimo</p> 
+  <hr> 
+  <form id="questionForm"> 
+   <div class="question-container"> 
+    <p>Onde você conheceu o Fábio?</p> <label> <input type="radio" name="Onde você conheceu o Fábio?" value=" trabalho"> No trabalho </label> <label> <input type="radio" name="Onde você conheceu o Fábio?" value="internet"> Na internet </label> <label> <input type="radio" name="Onde você conheceu o Fábio?" value=" escola"> Na escola </label> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>O Fábio tem alergia a quê?</p> <label> <input type="radio" name="O Fábio tem alergia a quê?" value=" pipoca"> A pipoca. </label> <label> <input type="radio" name="O Fábio tem alergia a quê?" value=" chocolate"> A chocolate. </label> <label> <input type="radio" name="O Fábio tem alergia a quê?" value=" leite"> A leite. </label> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Quantos anos o Fábio tem?</p> <label> <input type="radio" name="Quantos anos o Fábio tem?" value=" 25"> 25 anos </label> <label> <input type="radio" name="Quantos anos o Fábio tem?" value=" 23"> 23 anos </label> <label> <input type="radio" name="Quantos anos o Fábio tem?" value=" 22"> 22 anos </label> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Uma coisa que faz lembrar do Fábio.</p> 
+    <textarea name="umalembranca" id="textoDigitado" rows="4" placeholder="Sua resposta aqui..." required></textarea> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Qual é a cor favorita do Fábio?</p> <label> <input type="radio" name="Qual é a cor favorita do Fábio?" value=" preta"> Preta </label> <label> <input type="radio" name="Qual é a cor favorita do Fábio?" value=" azul"> Azul </label> <label> <input type="radio" name="Qual é a cor favorita do Fábio?" value=" vermelha"> Vermelha </label> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Cite uma lembrança que você tem junto com o Fábio.</p> 
+    <textarea name="citejunto" id="textoDigitado" rows="4" placeholder="Sua resposta aqui..." required></textarea> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Casaria com o Fábio?</p> <label> 
+      <input type="radio" name="Casaria" value=" Sim"> Sim </label>
+       <label> <input type="radio" name="Casaria" value=" Não"> Não </label> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Que esporte o Fábio pratica?</p> <label> <input type="radio" name="Que esporte o Fábio pratica?" value=" academia"> Nenhum opção </label> <label> <input type="radio" name="Que esporte o Fábio pratica?" value=" surf"> Surf e musculação </label> <label> <input type="radio" name="Que esporte o Fábio pratica?" value=" vôlei"> Vôlei e natação </label> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>É uma pergunta curiosa, mas o que você acha de alguém como o Fábio como companheiro de vida?</p> 
+    <textarea name="curiosa" id="textoDigitado" rows="4" placeholder="Sua resposta aqui..." required></textarea> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Pergunta importante: de que maneira o Fábio lida com os problemas?</p> <label> <input type="radio" name="Pergunta importante:" value=" academia">Aborda-os de maneira analítica, buscando soluções práticas. </label> 
+    <div> <label> <input type="radio" name="Pergunta importante:" value="enfreta"> Enfrenta-os com otimismo e positividade. Utiliza a reflexão e introspecção para encontrar respostas. </label> 
+    </div> 
+    <div> <label> <input type="radio" name="Pergunta importante:" value="tenta resolver"> Tenta resolver de forma colaborativa, envolvendo outras pessoas. </label> 
+    </div> 
+   </div> 
+   <hr> 
+   <div class="question-container"> 
+    <p>Se fosse a última vez que você fosse ver o Fábio, o que você falaria para ele?</p> 
+    <textarea name="verofabio" id="textoDigitado" rows="4" placeholder="Sua resposta aqui..." required></textarea> 
+   </div> <button type="button" onclick="concluir()">Concluir</button> 
+  </form> 
+  <script src="script.js"></script> 
+  <script src="sweetalert2.all.min.js"></script>
+  
+  <div> 
+   <footer> 
+    <p>TODAS AS SUAS RESPOSTAS SÃO TOTALMENTE ANÔNIMAS.</p> 
+   </footer> 
+  </div> 
+ </body>
+</html>
