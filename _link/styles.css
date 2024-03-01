@@ -1,0 +1,108 @@
+.swal-button--success {
+    background-color: #000000; /* Cor desejada para o botão de sucesso (verde) */
+}
+
+.swal-button--error {
+    background-color: #f44336; /* Cor desejada para o botão de erro (vermelho) */
+}
+
+
+.swal2-confirm {
+    background-color: black !important;
+    border-color: #fff;
+    border: 2px solid white 
+    
+}
+.swal2-popup.swal2-toast .swal2-styled.swal2-confirm {
+    background-color: black !important;
+    border: 2px solid white !important;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+img {
+            width: 35%;
+            max-width: 200px; /* Define o tamanho máximo da imagem */
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+
+
+.main-text {
+            text-align: center;
+            font-size: 25px; /* Ajuste o tamanho do texto principal conforme necessário */
+            font-weight: bold; /* Adiciona negrito ao texto principal */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto principal */
+        }
+
+        .smaller-text {
+            font-size: 20px; /* Tamanho do texto menor */
+            margin-top: -28px; /* Margem negativa para aproximar os textos */
+       font-weight: bold; /* Adiciona negrito ao texto principal */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto principal */
+     
+       
+       
+        }
+        #textoDigitado {
+        width: 300px;
+        height: 100px;
+    }
+        
+
+.question-container {
+    margin-bottom: 40px;
+}
+
+.question-container p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #000000; /* Cor de fundo */
+        color: white; /* Cor do texto */
+        border: none; /* Remove a borda padrão */
+        border-radius: 5px; /* Borda arredondada */
+        cursor: pointer;
+        width: 250px;
+        height: 50px;
+    }
+
+
+button:hover {
+        background-color: whiter; /* Altera a cor de fundo ao passar o mouse */
+    }
+    
+    
+    
+    footer {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+        
+    }
+    
+    
+    
+    hr {
+            border: 1px solid black; /* Cor da linha */
+            margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+        }
