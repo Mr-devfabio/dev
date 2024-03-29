@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visualizador de Código Fonte</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="source-viewer">
+  <textarea id="source-code" placeholder="Código fonte será exibido aqui..." readonly></textarea>
+  <button id="copy-button" onclick="copyCode()">Copiar</button>
+</div>
+<script>
+  
+  function fetchPageSource(url) {
+  fetch(url)
+    .then(response => response.text())
+    .then(data => {
+      // Substitui a URL desejada
+      const replacedData = data.replace(/https:\/\/production\.assets\.clips\.twitchcdn\.net\//g, 'https://clips-media-assets2.twitch.tv/');
+      // Encontra a posição inicial da parte desejada do código fonte
+      const startIndex = replacedData.indexOf('"sourceURL":"https://') + '"sourceURL":"'.length;
+      // Encontra a posição final da parte desejada do código fonte
+      const endIndex = replacedData.indexOf('"', startIndex);
+      // Extrai a parte desejada do código fonte
+      const sourceCode = replacedData.substring(startIndex, endIndex);
+      // Salva os dados em um objeto JSON
+      const jsonData = { "url": sourceCode };
+      // Exibe os dados na área de código
+      document.getElementById('source-code').value = JSON.stringify(jsonData, null, 2);
+    })
+    .catch(error => console.error('Error fetching page source:', error));
+}
+
+function copyCode() {
+  var sourceCode = document.getElementById('source-code');
+  sourceCode.select();
+  document.execCommand('copy');
+  alert('Código copiado para a área de transferência!');
+}
+
+// Carregar o código fonte de uma página da web ao carregar a página
+window.onload = function() {
+  var url = 'https://clips.twitch.tv/ShyBenevolentStarlingBCWarrior--pUwRdP0KEVNG5Yv';
+  fetchPageSource(url);
+};
+</script>
+</body>
+</html>
